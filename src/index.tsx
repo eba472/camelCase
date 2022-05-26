@@ -9,6 +9,7 @@ import LectureNotes from './routes/LectureNotes';
 import UsefulLinks from './routes/Useful';
 import Others from './routes/Others';
 import Lecture from './components/Lecture';
+import Welcome from './routes/Welcome';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,6 +19,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}>
+          <Route path='welcome' element={<Welcome />} />
           <Route path='members' element={<Members />} />
           <Route path='lectures' element={<LectureNotes />}>
             <Route path=':lectureId' element={<Lecture />} />
@@ -28,7 +30,7 @@ root.render(
             path='*'
             element={
               <main style={{ padding: '1rem' }}>
-                <p>There's nothing here!</p>
+                <p>Sorry, this page is empty!</p>
               </main>
             }
           />

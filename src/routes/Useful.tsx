@@ -1,6 +1,9 @@
-
 const UsefulLinks = () => {
-    return <div>Useful</div>
-}
+  return (
+    <div style={{ padding: 30, border: '1px  solid black' }}>
+      <h2>Please feel free to contribute 😀</h2>
+    </div>
+  );
+};
 
-export default UsefulLinks
+export default UsefulLinks;
