@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/harandaa/static/css/main.964fdded.css",
-    "main.js": "/harandaa/static/js/main.be19fe0d.js",
+    "main.js": "/harandaa/static/js/main.9f8ebae7.js",
     "static/js/787.28cb0dcd.chunk.js": "/harandaa/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/harandaa/index.html",
     "main.964fdded.css.map": "/harandaa/static/css/main.964fdded.css.map",
-    "main.be19fe0d.js.map": "/harandaa/static/js/main.be19fe0d.js.map",
+    "main.9f8ebae7.js.map": "/harandaa/static/js/main.9f8ebae7.js.map",
     "787.28cb0dcd.chunk.js.map": "/harandaa/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.964fdded.css",
-    "static/js/main.be19fe0d.js"
+    "static/js/main.9f8ebae7.js"
   ]
 }
