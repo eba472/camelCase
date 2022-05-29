@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/harandaa/static/css/main.964fdded.css",
-    "main.js": "/harandaa/static/js/main.9f8ebae7.js",
-    "static/js/787.28cb0dcd.chunk.js": "/harandaa/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/harandaa/index.html",
-    "main.964fdded.css.map": "/harandaa/static/css/main.964fdded.css.map",
-    "main.9f8ebae7.js.map": "/harandaa/static/js/main.9f8ebae7.js.map",
-    "787.28cb0dcd.chunk.js.map": "/harandaa/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/h/static/css/main.964fdded.css",
+    "main.js": "/h/static/js/main.99ba172d.js",
+    "static/js/787.28cb0dcd.chunk.js": "/h/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/h/index.html",
+    "main.964fdded.css.map": "/h/static/css/main.964fdded.css.map",
+    "main.99ba172d.js.map": "/h/static/js/main.99ba172d.js.map",
+    "787.28cb0dcd.chunk.js.map": "/h/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.964fdded.css",
-    "static/js/main.9f8ebae7.js"
+    "static/js/main.99ba172d.js"
   ]
 }
