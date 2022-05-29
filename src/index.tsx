@@ -18,14 +18,14 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />}>
-          <Route path='welcome' element={<Welcome />} />
-          <Route path='members' element={<Members />} />
-          <Route path='lectures' element={<LectureNotes />}>
+        <Route path='/h' element={<App />}>
+          <Route path='/h/welcome' element={<Welcome />} />
+          <Route path='/h/members' element={<Members />} />
+          <Route path='/h/lectures' element={<LectureNotes />}>
             <Route path=':lectureId' element={<Lecture />} />
           </Route>
-          <Route path='useful' element={<UsefulLinks />} />
-          <Route path='others' element={<Others />} />
+          <Route path='/h/useful' element={<UsefulLinks />} />
+          <Route path='/h/others' element={<Others />} />
           <Route
             path='*'
             element={

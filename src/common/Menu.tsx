@@ -45,29 +45,34 @@ const ResponsiveAppBar = () => {
     <AppBar position='static'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant='h6'
-            noWrap
-            component='a'
-            href='/'
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
+          <Link
+            style={{ textDecoration: 'None', color: 'white' }}
+            to='/h/welcome'
           >
-            <Link
-              style={{ textDecoration: 'None', color: 'white' }}
-              to='/welcome'
+            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          </Link>
+          <Link
+            style={{ textDecoration: 'None', color: 'white' }}
+            to='/h/welcome'
+          >
+            <Typography
+              variant='h6'
+              noWrap
+              component='a'
+              href='/'
+              sx={{
+                mr: 2,
+                display: { xs: 'none', md: 'flex' },
+                fontFamily: 'monospace',
+                fontWeight: 700,
+                letterSpacing: '.3rem',
+                color: 'inherit',
+                textDecoration: 'none',
+              }}
             >
               LOGO
-            </Link>
-          </Typography>
+            </Typography>
+          </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -99,16 +104,14 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign='center'>
-                    <Link
-                      style={{ textDecoration: 'None', color: 'white' }}
-                      to={`/${page}`}
-                    >
-                      {page}
-                    </Link>
-                  </Typography>
-                </MenuItem>
+                <Link
+                  style={{ textDecoration: 'None', color: 'white' }}
+                  to={`/h/${page}`}
+                >
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign='center'>{page}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -133,18 +136,18 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+              <Link
+                style={{ textDecoration: 'None', color: 'white' }}
+                to={`/h/${page}`}
               >
-                <Link
-                  style={{ textDecoration: 'None', color: 'white' }}
-                  to={`/${page}`}
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   {page}
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             ))}
           </Box>
 
