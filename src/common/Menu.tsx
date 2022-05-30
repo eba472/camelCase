@@ -47,13 +47,13 @@ const ResponsiveAppBar = () => {
         <Toolbar disableGutters>
           <Link
             style={{ textDecoration: 'None', color: 'white' }}
-            to='/h/welcome'
+            to='/welcome'
           >
             <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           </Link>
           <Link
             style={{ textDecoration: 'None', color: 'white' }}
-            to='/h/welcome'
+            to='/welcome'
           >
             <Typography
               variant='h6'
@@ -106,7 +106,7 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <Link
                   style={{ textDecoration: 'None', color: 'white' }}
-                  to={`/h/${page}`}
+                  to={`/${page}`}
                 >
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
                     <Typography textAlign='center'>{page}</Typography>
@@ -138,7 +138,7 @@ const ResponsiveAppBar = () => {
             {pages.map((page) => (
               <Link
                 style={{ textDecoration: 'None', color: 'white' }}
-                to={`/h/${page}`}
+                to={`/${page}`}
               >
                 <Button
                   key={page}
