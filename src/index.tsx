@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Members from './routes/Members';
-import LectureNotes from './routes/LectureNotes';
+import LessonNotes from './routes/lessonNotes';
 import UsefulLinks from './routes/Useful';
 import Others from './routes/Others';
 import Lecture from './components/Lecture';
@@ -21,7 +21,7 @@ root.render(
         <Route path='/' element={<App />}>
           <Route path='/welcome' element={<Welcome />} />
           <Route path='/members' element={<Members />} />
-          <Route path='/lectures' element={<LectureNotes />}>
+          <Route path='/lessons' element={<LessonNotes />}>
             <Route path=':lectureId' element={<Lecture />} />
           </Route>
           <Route path='/useful' element={<UsefulLinks />} />

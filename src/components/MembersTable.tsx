@@ -12,6 +12,7 @@ interface member {
   discord: string;
   leetcode: string;
   linkedin: string;
+  hobby: string[];
 }
 const membersData: member[] = [
   {
@@ -20,6 +21,7 @@ const membersData: member[] = [
     discord: 'Eba472',
     leetcode: 'Eba472',
     linkedin: 'eba472',
+    hobby: [],
   },
   {
     id: 2,
@@ -27,6 +29,7 @@ const membersData: member[] = [
     discord: 'Tseso',
     leetcode: 'tserensodnom',
     linkedin: 'tses0',
+    hobby: [],
   },
   {
     id: 3,
@@ -34,20 +37,23 @@ const membersData: member[] = [
     discord: 'Buya',
     leetcode: 'buyanjargal',
     linkedin: 'buya923',
+    hobby: [],
   },
   {
     id: 4,
     name: 'Khoso',
     discord: 'XOC',
-    leetcode: '',
-    linkedin: '',
+    leetcode: 'xoc',
+    linkedin: 'khosbayar-batsukh-76b378240',
+    hobby: [],
   },
   {
     id: 5,
     name: 'Anuul',
     discord: 'Teiishi',
-    leetcode: '',
+    leetcode: 'Ankn99',
     linkedin: 'anuul-a',
+    hobby: [],
   },
   {
     id: 6,
@@ -55,6 +61,7 @@ const membersData: member[] = [
     discord: 'jagaa',
     leetcode: '',
     linkedin: 'jargalsaikhanartag',
+    hobby: [],
   },
   {
     id: 7,
@@ -62,13 +69,15 @@ const membersData: member[] = [
     discord: 'unuu',
     leetcode: '',
     linkedin: 'unubold-erdenebeleg-645b28219',
+    hobby: [],
   },
   {
     id: 8,
     name: 'Bazu',
     discord: 'buzz',
-    leetcode: '',
+    leetcode: 'bazuunaa',
     linkedin: 'batzaya-byambasuren-b40bb6148',
+    hobby: [],
   },
   {
     id: 9,
@@ -76,6 +85,7 @@ const membersData: member[] = [
     discord: 'Anuka',
     leetcode: '',
     linkedin: 'anudari-chingunbat',
+    hobby: [],
   },
   {
     id: 10,
@@ -83,13 +93,15 @@ const membersData: member[] = [
     discord: 'dchular',
     leetcode: '',
     linkedin: 'uchral-davaajargal-180786131',
+    hobby: [],
   },
   {
     id: 11,
-    name: 'Hello!',
+    name: 'Saruul',
     discord: 'sadjyagaimo',
     leetcode: '',
     linkedin: '',
+    hobby: [],
   },
 ];
 
@@ -99,8 +111,10 @@ export default function MembersTable() {
       <Table sx={{ minWidth: 650 }} aria-label='simple table'>
         <TableHead>
           <TableRow>
-            <TableCell>Name</TableCell>
-            <TableCell align='left'>Discord</TableCell>
+            <TableCell>ID</TableCell>
+            <TableCell align='left'>Name</TableCell>
+            <TableCell align='left'>DiscordID</TableCell>
+            <TableCell align='left'>Hobby</TableCell>
             <TableCell align='left'>Leetcode</TableCell>
             <TableCell align='left'>Linkedin</TableCell>
           </TableRow>
@@ -112,9 +126,11 @@ export default function MembersTable() {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component='th' scope='row'>
-                {row.name}
+                {row.id}
               </TableCell>
+              <TableCell align='left'>{row.name}</TableCell>
               <TableCell align='left'>{row.discord}</TableCell>
+              <TableCell align='left'>{row.hobby}</TableCell>
               <TableCell align='left'>
                 {row.leetcode && (
                   <a
